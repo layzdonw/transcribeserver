@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  host: "0.0.0.0"
+  use_unix_socket: false
+  unix_socket: "/tmp/transcribe.sock"
+
+sherpa:
+  model_path: "./models/whisper-tiny"
+  tokens_path: "./models/whisper-tiny/tokens.txt"
+  sample_rate: 16000
+  num_threads: 4
+  decoding_method: "greedy_search"
+  # 说话人分离配置
+  enable_diarization: false
+  diarization_model_path: "./models/speaker-diarization" 

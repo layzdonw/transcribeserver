@@ -1,0 +1,37 @@
+# Git 相关
+.git
+.gitignore
+
+# 构建输出
+build/
+transcribeserver
+
+# 依赖
+vendor/
+
+# 测试文件
+*_test.go
+test/
+
+# 文档
+README.md
+LICENSE
+
+# IDE 文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 日志文件
+*.log
+
+# 临时文件
+*.tmp
+*.temp
+
+# 模型文件（将通过卷挂载）
+models/
+
+# 示例文件
+examples/ 
